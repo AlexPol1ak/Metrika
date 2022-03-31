@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="{% static 'images/m.png' %}" type="image/png" />
+    <link rel = 'stylesheet'  href="{% static 'css/set4.css' %}">
+    <title>Metrika</title>
+</head>
+<body>
+ <h1 class="wash">
+     <center >Удаление данных :(</center>
+  </h1>
+  <center><h2><b><i>
+     Введите данные для подтвреждения действия.
+</i></b></h2><br/></center>
+ <form method="POST">
+        {% csrf_token %}
+    <table>
+        {{ form3 }}
+    </table>
+    <input type="submit" value="Удалить данные" hspace="180" vspace="10">
+</form>
+ <h4><i>{{errorpass}}</i></h4>
+</body>
+</html>

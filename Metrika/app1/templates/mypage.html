@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="{% static 'images/m.png' %}" type="image/png" />
+    <link rel = 'stylesheet'  href="{% static 'css/set3.css' %}">
+    <title>Metrika</title>
+</head>
+<body>
+<h1>
+    <i>
+        <center><font size="16" color="white">Привет, {{name}}!</font></center>
+    </i>
+</h1>
+<a href = '' ><button>Выход</button></a>
+<a href = "wash/" ><button>Удалить данные</button></a>
+<br/>
+<h3><font size="5" color="white"><i>Мои данные:</i></font></h3>
+<h3><font size="6" color="white"><i>Обхват груди (bust/chest): {{bust}} см</i></font></h3>
+<h3><font size="6" color="white"><i>Обхват талии (waist): {{waist}} см</i></font></h3>
+<h3><font size="6" color="white"><i>Обхват бедер (hips): {{hips}} см</i></font></h3>
+<h3><font size="6" color="white"><i>Длина рукава (sleeves): {{sleeves}} см</i></font></h3>
+
+<center>
+    <details>
+    <summary><h4>
+        <font size="5" color="white">
+            <i>Мои размеры(жми на меня)</i>
+        </font>
+    </h4></summary>
+    <h3><font size="4" color="white"><i>Международный (international): {{international}}</i></font></h3>
+    <h3><font size="4" color="white"><i>Российский стандарт (Russian): {{russian}}</i></font></h3>
+    <h3><font size="4" color="white"><i>Стандарт Англии (England): {{england}}</i></font></h3>
+    <h3><font size="4" color="white"><i>Стандарт США (USA): {{usa}}</i></font></h3>
+    <h3><font size="4" color="white"><i>Европейский стандарт (Europe): {{europe}}</i></font></h3>
+    <h3><font size="4" color="white"><i>Стандарт Италии (Italy): {{italy}}</i></font></h3>
+    <h3><font size="4" color="white"><i>Стандарт Японии (Japan): {{japan}}</i></font></h3>
+</details>
+<details>
+    <summary><h4>
+        <font size="5" color="white" hspace="110">
+            <i>Магазины(жми на меня)</i>
+        </font>
+    </h4></summary>
+    <a href = https://www.lamoda.by/ target="_blank"  >
+        <font size="5" color="white" face="fantasy">Lamoda</font>
+    </a><br/>
+    <a href = https://www.kiabi.ru/ target="_blank"  >
+        <font size="5" color="white" face="fantasy">Kiabi</font>
+    </a><br/>
+    <a href = https://www.asos.com/ target="_blank"  >
+        <font size="5" color="white" face="fantasy">Asos</font>
+    </a><br/>
+    <a href = https://www.amazon.com/ target="_blank"  >
+        <font size="5" color="white" face="fantasy">Amazon</font>
+    </a><br/>
+    <a href = https://www.ernstings-family.de/ target="_blank"  >
+        <font size="5" color="white" face="fantasy">Ernstings Family</font>
+    </a><br/>
+    <a href = https://www.kenzo.com/ target="_blank"  >
+        <font size="5" color="white" face="fantasy">Kenzo</font>
+    </a><br/>
+    <a href = https://www.e-trend.co.jp/ target="_blank"  >
+        <font size="5" color="white" face="fantasy">E-trend</font>
+    </a><br/>
+</details><br/>
+    </center>
+</body>
+</html>

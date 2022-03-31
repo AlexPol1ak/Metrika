@@ -1,0 +1,12 @@
+body{
+    background-image:url(../images/fon2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blue {
+	color: blue;
+	font-size: 16px;
+	font-style : italic;
+}

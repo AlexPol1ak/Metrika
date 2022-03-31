@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="{% static 'images/m.png' %}" type="image/png" />
+    <link rel = 'stylesheet'  href="{% static 'css/set.css' %}">
+    <title>Metrika</title>
+</head>
+<body>
+<h1>
+    <i>
+        <center>Вас приветствует Metrika</center>
+    </i>
+</h1><br/>
+<h2 ><b><i>
+    Мы поможем определить Вам размер одежды по стандартам прозводителей разных стран.
+</i></b></h2>
+<h3 ><b><i>Так же с личной страницы вам будут доступны крупные интернет магазины.<br/>
+    Но для начала вам нужно  войти или зарегестирроваться.
+</i></b></h3>
+<a href = http://127.0.0.1:8000/reg/ target="_blank"  ><button>Регистрация</button></a>
+  <form method="POST">
+        {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input type="submit" value="Войти" hspace="195" vspace="10">
+</form>
+
+
+<img src="{% static 'images/girl1.jpg' %}" height="400" width="300"  hspace="200" vspace="20" >
+<img src="{% static 'images/men1.jpg' %}" height="400" width="300" hspace="0"  vspace="20"  >
+
+</body>
+</html>

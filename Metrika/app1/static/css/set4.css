@@ -1,0 +1,29 @@
+body{
+    background-image:url(../images/fon5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+}
+.blue {
+	color: blue;
+	font-size: 25px;
+	font-style : italic;
+}
+
+.wash {
+	color: #000000;
+	font-size: 48px;
+	font-style : italic;
+	font-weight: bold;
+}
+.right{
+        text-align:right;
+         }
+.left{
+        text-align:left;
+         }
+.center{
+        text-align:center;
+         }
